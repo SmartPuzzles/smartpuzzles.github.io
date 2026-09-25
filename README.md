@@ -16,6 +16,8 @@ link to from their settings screens and store listings.
 
 - Privacy policy — https://smartpuzzles.github.io/
 - Terms of use — https://smartpuzzles.github.io/terms/
+- `app-ads.txt` — https://smartpuzzles.github.io/app-ads.txt, the AdMob publisher verification file for the
+  six apps' shared developer website.
 
 The apps themselves are closed-source and live in private repositories. This is a GitHub
 Pages site, not the app source.
