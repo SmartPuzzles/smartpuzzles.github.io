@@ -2,6 +2,12 @@
 
 Logic puzzle apps with coaching that explains the reasoning behind a move.
 
+## Play all six games
+
+**Studio hub:** https://smartpuzzles.github.io/apps/
+
+Sudoku, Binairo, Crownfall, Zigline, Shikaku and Wordvine are playable in the browser with five interface languages, local progress and explained logical hints. These web editions provide selected starter puzzles. Only Smart Sudoku is currently available on the App Store.
+
 ## Smart Sudoku
 
 **Now on the App Store:** https://apps.apple.com/app/id6758866615
