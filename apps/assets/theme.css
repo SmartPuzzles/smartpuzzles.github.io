@@ -1,0 +1,102 @@
+/* Shared appearance tokens. A first visit follows the native dark brand, independent of OS preference. */
+:root{
+ color-scheme:dark;
+ --sp-bg:#080f1a;--sp-surface:#111d2d;--sp-raised:#17283f;--sp-text:#eef3fa;--sp-muted:#b1c3d9;--sp-line:#40546c;
+ --sp-accent:#b8d1fa;--sp-button-text:#10213b;--sp-orange:#ffbd75;--sp-hover:#253e5d;--sp-soft:#14253c;
+ --sp-cell-bg:#152035;--sp-cell-text:#eef3fa;--sp-region-text:#ffffff;
+ --sp-region-0:#203b54;--sp-region-1:#3f2f51;--sp-region-2:#315044;--sp-region-3:#59422d;
+ --sp-region-4:#3e3f63;--sp-region-5:#4e3344;--sp-region-6:#28525a;--sp-region-7:#52502a;
+ --bg:var(--sp-bg);--surface:var(--sp-surface);--text:var(--sp-text);--muted:var(--sp-muted);--line:var(--sp-line);--blue:var(--sp-accent);--orange:var(--sp-orange)
+}
+:root[data-theme="light"]{
+ color-scheme:light;
+ --sp-bg:#f4f1e9;--sp-surface:#fffdf8;--sp-raised:#e7edf6;--sp-text:#172332;--sp-muted:#4e6076;--sp-line:#788ba1;
+ --sp-accent:#234e85;--sp-button-text:#ffffff;--sp-orange:#845016;--sp-hover:#d8e4f4;--sp-soft:#e2ebf7;
+ --sp-cell-bg:#fffdf8;--sp-cell-text:#172332;--sp-region-text:#172332;
+ --sp-region-0:#d5e8fa;--sp-region-1:#e9def5;--sp-region-2:#d6ede0;--sp-region-3:#f3e2cc;
+ --sp-region-4:#e1e2f8;--sp-region-5:#f3dce8;--sp-region-6:#ceeaee;--sp-region-7:#ecebc6
+}
+body,.game-page{background:var(--sp-bg);color:var(--sp-text)}
+.header,.game-page .header,.lesson,.play-rules,.game-page .footer{border-color:var(--sp-line)}
+.lang select,.game-page .lang select{background:var(--sp-surface);color:var(--sp-text);border-color:var(--sp-line)}
+.navlinks>a,.game-page .navlinks a,.breadcrumb,.game-type,.studio-return{color:var(--sp-muted)}
+.navlinks>a:hover{color:var(--sp-text)}
+.intro,.game-card p,.card-number,.card-store,.lesson p,.footer,.game-page .footer,.small,.featured p,.player-head p,.play-rules p,.play-rules .small,.download-panel p,.game-loading{color:var(--sp-muted)}
+.eyebrow,.featured .eyebrow{color:var(--sp-orange)}
+.hero-icon,.game-card{background:var(--sp-surface);border-color:var(--sp-line)}
+.game-card{border-top-color:var(--game)}
+.featured,.download-panel{background:var(--sp-soft);border-color:var(--sp-line)}
+.button,.game-page .button,.download{background:var(--sp-accent);color:var(--sp-button-text);border-color:var(--sp-accent)}
+.button:hover,.game-page .button:hover,.download:hover{background:var(--sp-accent);filter:brightness(1.08)}
+.button.light,.game-page .button.light{background:transparent;color:var(--sp-text);border-color:var(--sp-line)}
+.button.light:hover,.game-page .button.light:hover{background:var(--sp-raised);filter:none}
+.other-games a{color:var(--sp-text);border-color:var(--sp-line)}
+.game-toolbar button,.game-toolbar select{background:var(--sp-raised);color:var(--sp-text);border-color:var(--sp-line)}
+.game-message,.game-note{color:var(--sp-muted)}
+.theme-toggle{display:inline-flex;align-items:center;justify-content:center;gap:8px;flex-shrink:0;min-width:44px;min-height:44px;padding:9px 12px;border:1px solid var(--sp-line);border-radius:8px;background:var(--sp-surface);color:var(--sp-text);font:inherit;font-size:13px;font-weight:600;line-height:1.3;cursor:pointer}
+.theme-toggle:hover{background:var(--sp-raised)}
+.theme-toggle svg{width:18px;height:18px;flex-shrink:0;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.theme-toggle .theme-icon-dark{display:none}
+[data-theme="light"] .theme-toggle .theme-icon-light{display:none}
+[data-theme="light"] .theme-toggle .theme-icon-dark{display:block}
+a:focus-visible,button:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--sp-orange);outline-offset:4px}
+@media(max-width:700px){.navlinks{gap:8px}.theme-toggle{padding:9px;width:44px}.theme-toggle [data-theme-label]{display:none}}
+/* Fixed native board screenshots remain faithful to the app in either surrounding page theme. */
+[data-theme="light"] .factbar,[data-theme="light"] .coordinate-cols,[data-theme="light"] .coordinate-rows{color:var(--sp-muted)}
+[data-theme="light"] .example,[data-theme="light"] .end{background:var(--sp-soft);border-color:var(--sp-line)}
+[data-theme="light"] .end p{color:var(--sp-muted)}
+[data-theme="light"] .languages a:hover,[data-theme="light"] .languages a[aria-current]{background:var(--sp-raised)}
+[data-theme="light"] .textlink{border-color:var(--sp-line)}
+/* Game modules add scoped styles when mounted. These theme selectors deliberately outrank those rules. */
+[data-theme="light"] .numbers-game select,[data-theme="light"] .numbers-game .game-toolbar button,[data-theme="light"] .numbers-game .number-pad button,[data-theme="light"] .numbers-game .coach-panel button,[data-theme="light"] .numbers-game .retry,
+[data-theme="light"] .regions-controls button,[data-theme="light"] .regions-controls select,[data-theme="light"] .path-game button:not(.cell),[data-theme="light"] .path-game select{background:var(--sp-raised);color:var(--sp-text);border-color:var(--sp-line)}
+[data-theme="light"] .numbers-game .game-toolbar button:hover,[data-theme="light"] .numbers-game .number-pad button:hover,[data-theme="light"] .regions-controls button:hover{background:var(--sp-hover)}
+[data-theme="light"] .numbers-game button[aria-pressed=true],[data-theme="light"] .regions-controls button[aria-pressed=true]{background:var(--sp-accent);color:var(--sp-button-text);border-color:var(--sp-accent)}
+[data-theme="light"] .numbers-game .game-note,[data-theme="light"] .numbers-game .local-note,[data-theme="light"] .numbers-game .board-heading,[data-theme="light"] .numbers-game .game-message,
+[data-theme="light"] .regions-rule,[data-theme="light"] .regions-progress,[data-theme="light"] .regions-controls label,[data-theme="light"] .regions-legend,
+[data-theme="light"] .path-game .game-note,[data-theme="light"] .path-game .path-progress,[data-theme="light"] .path-game .word-license,[data-theme="light"] .path-game .starter-label,[data-theme="light"] .path-game .word-trace{color:var(--sp-muted)}
+[data-theme="light"] .numbers-game .number-board{background:#8799ae;border-color:#637991}
+[data-theme="light"] .numbers-game .cell{background:var(--sp-cell-bg);color:#234e85}
+[data-theme="light"] .numbers-game .cell.given{background:#e7edf6;color:var(--sp-cell-text)}
+[data-theme="light"] .numbers-game .cell.peer:not(.selected){background:#e0eaf7}
+[data-theme="light"] .numbers-game .cell.selected{background:#bdd5f7;color:#17334f;box-shadow:inset 0 0 0 2px #234e85}
+[data-theme="light"] .numbers-game .cell.error{background:#ffe0e0;color:#752929;box-shadow:inset 0 0 0 2px #a52c2c}
+[data-theme="light"] .numbers-game .notes{color:#40536e}
+[data-theme="light"] .numbers-game .edge-h,[data-theme="light"] .numbers-game .edge-v{background:#e7edf6;color:#684315}
+[data-theme="light"] .numbers-game .coach-panel{background:#fff0d8;border-color:#916124;color:var(--sp-text)}
+[data-theme="light"] .numbers-game .coach-panel h4{color:#784b12}
+[data-theme="light"] .regions-board,[data-theme="light"] .regions-board .cell{border-color:#637991}
+[data-theme="light"] .regions-board .cell{color:var(--sp-region-text);background:var(--sp-cell-bg)}
+[data-theme="light"] .regions-board .cell.crossed{color:#40536e}
+[data-theme="light"] .regions-board .cell .shape-icon{color:#684315}
+[data-theme="light"] .regions-message,[data-theme="light"] .path-game .game-message{background:var(--sp-soft);color:var(--sp-text);border-left-color:#234e85}
+[data-theme="light"] .path-game .game-board{background:#8b9db3;border-color:#637991}
+[data-theme="light"] .path-game .cell{background:#fffdf8;color:var(--sp-cell-text)}
+[data-theme="light"] .path-game .cell.visited{background:#c8dcf7}
+[data-theme="light"] .path-game .cell.anchor span{background:#234e85;color:#fff}
+[data-theme="light"] .path-game .cell.trace{background:#234e85;color:#fff}
+[data-theme="light"] .path-game .cell.wall{background:#d4dce6}
+[data-theme="light"] .path-game .cell.locked{background:var(--word-color);color:#071323}
+[data-theme="light"] .path-game .cell.chosen{box-shadow:inset 0 0 0 3px #17334f}
+[data-theme="light"] .path-game .path-line polyline{stroke:#234e85;opacity:.85}
+[data-theme="light"] .path-game .word-slot{color:#40536e;border-color:#637991}
+[data-theme="light"] .path-game .word-slot.found{background:var(--word-color);color:#102039}
+[data-theme="light"] .path-game .word-license a{color:#234e85}
+[data-theme="light"] .completion{background:#d5efe3;color:#15533a;border-color:#2b7354}
+[data-theme="light"] .numbers-game .cell:focus-visible,[data-theme="light"] .regions-board .cell:focus-visible,[data-theme="light"] .path-game .cell:focus-visible{outline-color:#784b12}
+
+/* Keep the established Sudoku product's native dark identity. */
+html:not([data-theme="light"]) .product-page{--sp-bg:#080d17;--sp-surface:#111b2c;--sp-text:#f4f6fb;--sp-muted:#a9b7cd;--sp-line:#26354d;--sp-accent:#91baff;--sp-orange:#ffad57;--blue:#72a9ff;--orange:#ffad57;--muted:#a9b7cd;--surface:#111b2c;--line:#26354d;--text:#f4f6fb}
+
+[data-theme="light"] .numbers-game .cell.hint,[data-theme="light"] .path-game .cell.hinted{outline-color:#845016}
+[data-theme="light"] .regions-board .cell.is-hint{box-shadow:inset 0 0 0 4px #845016}
+[data-theme="light"] .regions-board .cell.is-conflict{box-shadow:inset 0 0 0 4px #a52c2c}
+[data-theme="light"] .regions-board .cell.is-corner{box-shadow:inset 0 0 0 4px #234e85}
+[data-theme="light"] .path-game .cell.endpoint{box-shadow:inset 0 0 0 3px #845016}
+[data-theme="light"] .regions-message.error{border-left-color:#a52c2c}
+[data-theme="light"] .regions-message.success{border-left-color:#15533a}
+[data-theme="light"] .path-game .game-message.error{border-color:#845016}
+[data-theme="light"] .regions-board .cell .region-id{opacity:.8}
+/* Keep both language and appearance controls reachable on narrow phones. */
+@media(max-width:700px){.nav{column-gap:12px;flex-wrap:wrap;padding-top:12px;padding-bottom:12px}.navlinks{margin-left:auto;flex-shrink:0}}
+[data-theme="light"] .numbers-game button:focus-visible,[data-theme="light"] .numbers-game select:focus-visible{outline-color:#784b12}
