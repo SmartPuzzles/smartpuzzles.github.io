@@ -150,6 +150,9 @@ export function mountSudoku(root,options={}){
   if(event.key==='Delete'||event.key==='Backspace'){event.preventDefault();mutate(eraseSudokuEntry(state,puzzle,state.selected))}
   if(/^[1-9]$/.test(event.key)&&Number(event.key)<=n){event.preventDefault();if(state.mode==='color'){const colour=Number(event.key)-1;if(colour<SUDOKU_COLOURS.length){remember();state=setSudokuColor(state,state.selected,colour);render(true);persist()}}else mutate(updateSudokuEntry(state,puzzle,state.selected,Number(event.key)))}
  }
+ const ownerDocument=root.ownerDocument;
+ const onFullscreenChange=()=>render();
+ ownerDocument.addEventListener('fullscreenchange',onFullscreenChange);
  root.addEventListener('click',onClick);root.addEventListener('change',onChange);root.addEventListener('keydown',onKey);
  const interval=setInterval(()=>{if(dead||!state||paused||lesson||ad||document.hidden)return;elapsed++;const timerNode=root.querySelector('[data-timer]');if(timerNode)timerNode.textContent=timer();if(elapsed%10===0)persist()},1000);
  root.textContent=t.loading;
@@ -157,5 +160,5 @@ export function mountSudoku(root,options={}){
  const ready=fetch(new URL('../data/numbers/starter.json',import.meta.url),{signal:abort.signal}).then(r=>{if(!r.ok)throw Error('load');return r.json()}).then(data=>{
   if(dead)return;bank=data.sudoku;const saved=read(storageKey)||read('smartpuzzles:web:sudoku:v1');const existing=saved&&bank.find(p=>p.key===saved.key);choose(existing?.size||9,existing?.difficulty||'easy',false,existing?saved:null);
  }).catch(()=>{if(!dead){root.innerHTML=`<p>${esc(t.loadError)}</p>${button('reload',t.retry)}`;root.querySelector('button').addEventListener('click',()=>location.reload(),{once:true})}}).finally(()=>clearTimeout(timeout));
- return {ready,destroy(){dead=true;root.classList.remove('sudoku-expanded');persist();resolvePrompt?.(false);rewards.cancel();abort.abort();clearTimeout(timeout);clearInterval(interval);root.removeEventListener('click',onClick);root.removeEventListener('change',onChange);root.removeEventListener('keydown',onKey)}};
+ return {ready,destroy(){dead=true;root.classList.remove('sudoku-expanded');persist();resolvePrompt?.(false);rewards.cancel();abort.abort();clearTimeout(timeout);clearInterval(interval);ownerDocument.removeEventListener('fullscreenchange',onFullscreenChange);root.removeEventListener('click',onClick);root.removeEventListener('change',onChange);root.removeEventListener('keydown',onKey)}};
 }

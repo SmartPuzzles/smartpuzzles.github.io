@@ -2,7 +2,7 @@ const root = document.getElementById('game-root');
 const game = document.body.dataset.game;
 const locale = document.body.dataset.locale || 'en';
 const loaders = {
- sudoku: () => import('./modules/sudoku-game.js?v=20261105-focus').then(m => m.mountSudoku),
+ sudoku: () => import('./modules/sudoku-game.js?v=20261105-fullscreen').then(m => m.mountSudoku),
  binairo: () => import('./modules/numbers.js').then(m => m.mountBinairo),
  crownfall: () => import('./modules/regions.js').then(m => m.mountCrownfall),
  shikaku: () => import('./modules/regions.js').then(m => m.mountShikaku),
