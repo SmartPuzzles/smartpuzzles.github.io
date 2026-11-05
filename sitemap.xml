@@ -1,43 +1,187 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://smartpuzzles.github.io/sudoku/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/sudoku/zh-Hant/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/sudoku/zh-Hans/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/sudoku/ja/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/sudoku/ko/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/apps/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/apps/zh-Hant/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/apps/zh-Hans/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/apps/ja/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/apps/ko/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/play/sudoku/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/play/sudoku/zh-Hant/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/play/sudoku/zh-Hans/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/play/sudoku/ja/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/play/sudoku/ko/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/play/binairo/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/play/binairo/zh-Hant/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/play/binairo/zh-Hans/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/play/binairo/ja/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/play/binairo/ko/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/play/crownfall/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/play/crownfall/zh-Hant/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/play/crownfall/zh-Hans/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/play/crownfall/ja/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/play/crownfall/ko/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/play/zigline/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/play/zigline/zh-Hant/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/play/zigline/zh-Hans/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/play/zigline/ja/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/play/zigline/ko/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/play/shikaku/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/play/shikaku/zh-Hant/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/play/shikaku/zh-Hans/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/play/shikaku/ja/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/play/shikaku/ko/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/play/wordvine/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/play/wordvine/zh-Hant/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/play/wordvine/zh-Hans/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/play/wordvine/ja/</loc><lastmod>2026-11-04</lastmod></url>
-<url><loc>https://smartpuzzles.github.io/play/wordvine/ko/</loc><lastmod>2026-11-04</lastmod></url>
+  <url>
+    <loc>https://smartpuzzles.github.io/sudoku/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/sudoku/zh-Hant/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/sudoku/zh-Hans/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/sudoku/ja/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/sudoku/ko/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/apps/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/apps/zh-Hant/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/apps/zh-Hans/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/apps/ja/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/apps/ko/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/play/sudoku/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/play/sudoku/zh-Hant/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/play/sudoku/zh-Hans/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/play/sudoku/ja/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/play/sudoku/ko/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/play/binairo/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/play/binairo/zh-Hant/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/play/binairo/zh-Hans/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/play/binairo/ja/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/play/binairo/ko/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/play/crownfall/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/play/crownfall/zh-Hant/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/play/crownfall/zh-Hans/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/play/crownfall/ja/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/play/crownfall/ko/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/play/zigline/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/play/zigline/zh-Hant/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/play/zigline/zh-Hans/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/play/zigline/ja/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/play/zigline/ko/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/play/shikaku/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/play/shikaku/zh-Hant/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/play/shikaku/zh-Hans/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/play/shikaku/ja/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/play/shikaku/ko/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/play/wordvine/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/play/wordvine/zh-Hant/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/play/wordvine/zh-Hans/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/play/wordvine/ja/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/play/wordvine/ko/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/learn/sudoku/</loc>
+    <lastmod>2026-11-05</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/learn/sudoku/pencil-marks/</loc>
+    <lastmod>2026-11-05</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/learn/sudoku/naked-single/</loc>
+    <lastmod>2026-11-05</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/learn/sudoku/zh-Hant/</loc>
+    <lastmod>2026-11-05</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/learn/sudoku/zh-Hant/pencil-marks/</loc>
+    <lastmod>2026-11-05</lastmod>
+  </url>
+  <url>
+    <loc>https://smartpuzzles.github.io/learn/sudoku/zh-Hant/naked-single/</loc>
+    <lastmod>2026-11-05</lastmod>
+  </url>
 </urlset>
