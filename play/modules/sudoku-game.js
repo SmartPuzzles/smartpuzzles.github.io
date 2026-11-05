@@ -1,7 +1,7 @@
 import {validateSudoku} from './numbers.js';
 import {getSudokuCoach,applySudokuCoachAction} from './sudoku-coach.js';
 import {createSudokuState,updateSudokuEntry,eraseSudokuEntry,setSudokuColor,autoPencilState,getSudokuHighlights,SUDOKU_COLOURS} from './sudoku-state.js';
-import {SUDOKU_UI_TEXT} from './sudoku-ui-text.js';
+import {SUDOKU_UI_TEXT} from './sudoku-ui-text.js?v=20261105-notice';
 import {createWebRewards,createGoogleWebRewardProvider} from './web-rewards.js';
 const copy=x=>JSON.parse(JSON.stringify(x));
 const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -43,7 +43,7 @@ export function mountSudoku(root,options={}){
  }
  function adHTML(){
   if(!ad)return '';
-  const headline=ad.type==='confirm'?t[ad.kind==='coach'?'adCoach':'adHint']:ad.type==='info'?(ad.fallback?t.adFailedTitle:t.coach):t.adLoading;
+  const headline=ad.type==='confirm'?t[ad.kind==='coach'?'adCoach':'adHint']:ad.type==='info'?(ad.fallback?t.adFailedTitle:t.notice):t.adLoading;
   const body=ad.type==='confirm'?t.adPrompt:ad.type==='info'?ad.message:t.adLoading;
   return `<div class="reward-overlay"><section class="reward-dialog" role="dialog" aria-modal="true" aria-labelledby="reward-title"><h2 id="reward-title">${esc(headline)}</h2><p>${esc(body)}</p>${ad.type==='confirm'?button('begin-reward',t.continue):ad.type==='prompt'?button('show-reward',text('adWatch',{n:ad.n,total:ad.total})):''}<div class="reward-actions">${button('cancel-reward',ad.type==='info'?t.confirm:t.cancel)}</div></section></div>`;
  }
@@ -85,7 +85,7 @@ export function mountSudoku(root,options={}){
   const result=await rewards.acquire(kind,{onProgress:({n,total})=>{if(!dead&&generation===rewardGeneration){ad={type:'loading',kind,n,total};render()}},onPrompt:({n,total})=>new Promise(resolve=>{if(dead||generation!==rewardGeneration){resolve(false);return}resolvePrompt=resolve;ad={type:'prompt',kind,n,total};render()})});
   if(dead||generation!==rewardGeneration){result.cancel?.();return}
   if(result.status==='cancelled'){ad=null;message=t.adCancelled;render();return}
-  if(result.status!=='granted'){ad={type:'info',message:t[{offline:'adOffline',cancelled:'adCancelled',limit:'coachLimit',unavailable:'adUnavailable',busy:'busy'}[result.status]||'adRetry']};render();return}
+  if(result.status!=='granted'){message=t[{offline:'adOffline',cancelled:'adCancelled',limit:'coachLimit',unavailable:'adUnavailable',busy:'busy'}[result.status]||'adRetry'];ad={type:'info',message};render();return}
   if(kind==='hint'){
    const next=applyLesson(value);if(!next.changed){result.cancel();ad={type:'info',message:t.stale};render();return}
    if(!result.commit()){ad={type:'info',message:t.stale};render();return}

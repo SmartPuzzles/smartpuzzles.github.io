@@ -85,7 +85,8 @@ export const SUDOKU_UI_TEXT = {
     "settingsSaved": "Settings saved",
     "hintUsed": "One hint applied.",
     "coachApplied": "Coach step applied.",
-    "noChange": "There is no change to apply."
+    "noChange": "There is no change to apply.",
+    "notice": "Notice"
   },
   "zh-Hant": {
     "loading": "載入緊題目…",
@@ -172,7 +173,8 @@ export const SUDOKU_UI_TEXT = {
     "settingsSaved": "設定已儲存",
     "hintUsed": "已套用一次提示。",
     "coachApplied": "已套用教練步驟。",
-    "noChange": "冇可以套用嘅變更。"
+    "noChange": "冇可以套用嘅變更。",
+    "notice": "通知"
   },
   "zh-Hans": {
     "loading": "正在加载题目…",
@@ -259,7 +261,8 @@ export const SUDOKU_UI_TEXT = {
     "settingsSaved": "设置已保存",
     "hintUsed": "已应用一次提示。",
     "coachApplied": "已应用教练步骤。",
-    "noChange": "没有可以应用的更改。"
+    "noChange": "没有可以应用的更改。",
+    "notice": "通知"
   },
   "ja": {
     "loading": "問題を読み込み中…",
@@ -346,7 +349,8 @@ export const SUDOKU_UI_TEXT = {
     "settingsSaved": "設定を保存しました",
     "hintUsed": "ヒントを1回反映しました。",
     "coachApplied": "コーチの一手を反映しました。",
-    "noChange": "反映できる変更はありません。"
+    "noChange": "反映できる変更はありません。",
+    "notice": "お知らせ"
   },
   "ko": {
     "loading": "퍼즐을 불러오는 중…",
@@ -433,6 +437,7 @@ export const SUDOKU_UI_TEXT = {
     "settingsSaved": "설정을 저장했습니다",
     "hintUsed": "힌트를 1회 적용했습니다.",
     "coachApplied": "코치의 단계를 적용했습니다.",
-    "noChange": "적용할 변경 사항이 없습니다."
+    "noChange": "적용할 변경 사항이 없습니다.",
+    "notice": "알림"
   }
 };
