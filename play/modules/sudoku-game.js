@@ -1,5 +1,5 @@
 import {validateSudoku} from './numbers.js';
-import {getSudokuCoach,applySudokuCoachAction} from './sudoku-coach.js';
+import {getSudokuCoach,applySudokuCoachAction} from './sudoku-coach.js?v=20261105-reason';
 import {createSudokuState,updateSudokuEntry,eraseSudokuEntry,setSudokuColor,autoPencilState,getSudokuHighlights,SUDOKU_COLOURS} from './sudoku-state.js';
 import {SUDOKU_UI_TEXT} from './sudoku-ui-text.js?v=20261105-notice';
 import {createWebRewards,createGoogleWebRewardProvider} from './web-rewards.js';
