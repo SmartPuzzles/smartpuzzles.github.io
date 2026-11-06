@@ -44,3 +44,5 @@ https://smartpuzzles.github.io/learn/sudoku/naked-single/
 https://smartpuzzles.github.io/learn/sudoku/zh-Hant/
 https://smartpuzzles.github.io/learn/sudoku/zh-Hant/pencil-marks/
 https://smartpuzzles.github.io/learn/sudoku/zh-Hant/naked-single/
+https://smartpuzzles.github.io/learn/sudoku/x-wing/
+https://smartpuzzles.github.io/learn/sudoku/zh-Hant/x-wing/
